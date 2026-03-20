@@ -1,0 +1,297 @@
+.prompt-detail__header {
+  padding: calc(var(--space-3xl) + 60px) 0 var(--space-lg);
+}
+
+.prompt-detail__back {
+  text-decoration: none;
+}
+
+.prompt-detail__layout {
+  display: grid;
+  grid-template-columns: 1fr 340px;
+  gap: var(--space-2xl);
+  padding-bottom: var(--space-2xl);
+}
+
+.prompt-detail__badges {
+  display: flex;
+  gap: var(--space-sm);
+  flex-wrap: wrap;
+  margin-bottom: var(--space-lg);
+}
+
+.prompt-detail__title {
+  font-family: var(--font-display);
+  font-size: clamp(1.5rem, 3vw, 2.2rem);
+  font-weight: 800;
+  letter-spacing: -0.02em;
+  margin-bottom: var(--space-lg);
+  line-height: 1.2;
+}
+
+.prompt-detail__meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: var(--space-md);
+  margin-bottom: var(--space-xl);
+  padding-bottom: var(--space-xl);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.prompt-detail__author {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm);
+}
+
+.prompt-detail__avatar {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+}
+
+.prompt-detail__author-name {
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.prompt-detail__verified {
+  width: 18px;
+  height: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.6rem;
+  background: var(--color-accent-primary);
+  color: white;
+  border-radius: 50%;
+  font-weight: 700;
+}
+
+.prompt-detail__stats {
+  display: flex;
+  gap: var(--space-lg);
+}
+
+.prompt-detail__stat {
+  display: flex;
+  align-items: center;
+  gap: var(--space-xs);
+  font-size: 0.88rem;
+  color: var(--color-text-secondary);
+}
+
+.prompt-detail__star {
+  color: #fbbf24;
+  fill: #fbbf24;
+}
+
+.prompt-detail__description {
+  font-size: 1rem;
+  color: var(--color-text-secondary);
+  line-height: 1.7;
+  margin-bottom: var(--space-2xl);
+}
+
+/* Prompt Box */
+.prompt-detail__prompt-box {
+  position: relative;
+  margin-bottom: var(--space-xl);
+  overflow: hidden;
+}
+
+.prompt-detail__prompt-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: var(--space-md) var(--space-lg);
+  border-bottom: 1px solid var(--color-border);
+}
+
+.prompt-detail__prompt-header h3 {
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.prompt-detail__prompt-text {
+  padding: var(--space-lg);
+  overflow-x: auto;
+}
+
+.prompt-detail__prompt-text code {
+  font-size: 0.85rem;
+  font-family: 'JetBrains Mono', 'Fira Code', monospace;
+  color: var(--color-text-secondary);
+  white-space: pre-wrap;
+  line-height: 1.7;
+}
+
+.prompt-detail__prompt-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 60%;
+  background: linear-gradient(transparent, var(--color-bg-card) 80%);
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  padding-bottom: var(--space-lg);
+}
+
+.prompt-detail__prompt-overlay p {
+  font-size: 0.85rem;
+  color: var(--color-text-tertiary);
+}
+
+/* Tags */
+.prompt-detail__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-2xl);
+}
+
+.prompt-detail__tag {
+  padding: 0.3rem 0.8rem;
+  background: var(--color-bg-glass);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-full);
+  font-size: 0.8rem;
+  color: var(--color-text-secondary);
+  text-decoration: none;
+  transition: all var(--transition-fast);
+}
+
+.prompt-detail__tag:hover {
+  border-color: var(--color-border-hover);
+  color: var(--color-accent-primary-light);
+}
+
+/* Reviews */
+.prompt-detail__reviews {
+  padding: var(--space-xl);
+}
+
+.prompt-detail__reviews-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-lg);
+}
+
+.prompt-detail__review {
+  padding: var(--space-lg) 0;
+  border-bottom: 1px solid var(--color-border);
+}
+
+.prompt-detail__review:last-child {
+  border-bottom: none;
+  padding-bottom: 0;
+}
+
+.prompt-detail__review-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--space-sm);
+}
+
+.prompt-detail__review-header strong {
+  font-size: 0.88rem;
+}
+
+.prompt-detail__review-stars {
+  display: flex;
+  gap: 2px;
+}
+
+.star-filled {
+  color: #fbbf24;
+  fill: #fbbf24;
+}
+
+.prompt-detail__review p {
+  font-size: 0.85rem;
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+  font-style: italic;
+}
+
+/* Sidebar */
+.prompt-detail__sidebar {
+  position: sticky;
+  top: 100px;
+}
+
+.prompt-detail__purchase {
+  padding: var(--space-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.prompt-detail__price-wrap {
+  text-align: center;
+  margin-bottom: var(--space-lg);
+}
+
+.prompt-detail__price {
+  font-family: var(--font-display);
+  font-size: 2.5rem;
+  font-weight: 800;
+}
+
+.prompt-detail__price--free {
+  color: var(--color-accent-success);
+}
+
+.prompt-detail__buy-btn {
+  width: 100%;
+  margin-bottom: var(--space-md);
+}
+
+.prompt-detail__actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-sm);
+  margin-bottom: var(--space-xl);
+}
+
+.prompt-detail__info-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.prompt-detail__info-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.85rem;
+}
+
+.prompt-detail__info-item span:first-child {
+  color: var(--color-text-tertiary);
+}
+
+.prompt-detail__info-item span:last-child {
+  color: var(--color-text-primary);
+  font-weight: 500;
+}
+
+/* Related */
+.prompt-detail__related {
+  border-top: 1px solid var(--color-border);
+}
+
+@media (max-width: 900px) {
+  .prompt-detail__layout {
+    grid-template-columns: 1fr;
+  }
+  
+  .prompt-detail__sidebar {
+    position: static;
+  }
+}

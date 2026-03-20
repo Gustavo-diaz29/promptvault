@@ -1,0 +1,215 @@
+.sell__hero {
+  padding: calc(var(--space-4xl) + 80px) 0 var(--space-4xl);
+  background: var(--gradient-hero);
+  text-align: center;
+}
+
+.sell__title {
+  font-family: var(--font-display);
+  font-size: clamp(2.2rem, 5vw, 3.5rem);
+  font-weight: 800;
+  letter-spacing: -0.03em;
+  line-height: 1.1;
+  margin-bottom: var(--space-lg);
+}
+
+.sell__title-gradient {
+  background: var(--gradient-secondary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sell__subtitle {
+  font-size: clamp(1rem, 2vw, 1.15rem);
+  color: var(--color-text-secondary);
+  max-width: 600px;
+  margin: 0 auto var(--space-2xl);
+  line-height: 1.7;
+}
+
+.sell__hero-actions {
+  display: flex;
+  gap: var(--space-md);
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: var(--space-3xl);
+}
+
+.sell__hero-stats {
+  display: flex;
+  justify-content: center;
+  gap: var(--space-3xl);
+  padding-top: var(--space-2xl);
+  border-top: 1px solid var(--color-border);
+}
+
+.sell__hero-stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: var(--space-xs);
+}
+
+.sell__hero-stat-value {
+  font-family: var(--font-display);
+  font-size: 1.8rem;
+  font-weight: 800;
+  background: var(--gradient-primary);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sell__hero-stat-label {
+  font-size: 0.82rem;
+  color: var(--color-text-tertiary);
+}
+
+/* Benefits */
+.sell__benefits {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  gap: var(--space-lg);
+}
+
+.sell__benefit {
+  padding: var(--space-2xl);
+  text-align: center;
+}
+
+.sell__benefit-icon {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: var(--radius-md);
+  margin: 0 auto var(--space-lg);
+}
+
+.sell__benefit-title {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.sell__benefit-desc {
+  font-size: 0.88rem;
+  color: var(--color-text-tertiary);
+  line-height: 1.6;
+}
+
+/* Steps */
+.sell__how-section {
+  background: var(--color-bg-secondary);
+}
+
+.sell__steps {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: var(--space-lg);
+  position: relative;
+}
+
+.sell__steps::before {
+  content: '';
+  position: absolute;
+  top: 28px;
+  left: 40px;
+  right: 40px;
+  height: 2px;
+  background: var(--gradient-primary);
+  opacity: 0.3;
+}
+
+.sell__step {
+  text-align: center;
+  position: relative;
+}
+
+.sell__step-num {
+  width: 56px;
+  height: 56px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto var(--space-lg);
+  border-radius: 50%;
+  background: var(--gradient-primary);
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 800;
+  color: white;
+  position: relative;
+  z-index: 1;
+}
+
+.sell__step-title {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 700;
+  margin-bottom: var(--space-sm);
+}
+
+.sell__step-desc {
+  font-size: 0.85rem;
+  color: var(--color-text-tertiary);
+  line-height: 1.6;
+}
+
+/* Requirements */
+.sell__requirements {
+  padding: var(--space-2xl);
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.sell__req-title {
+  font-family: var(--font-display);
+  font-size: 1.2rem;
+  font-weight: 700;
+  margin-bottom: var(--space-xl);
+  text-align: center;
+}
+
+.sell__req-list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-md);
+}
+
+.sell__req-item {
+  display: flex;
+  align-items: center;
+  gap: var(--space-md);
+  font-size: 0.92rem;
+  color: var(--color-text-secondary);
+}
+
+.sell__req-icon {
+  color: var(--color-accent-success);
+  flex-shrink: 0;
+}
+
+@media (max-width: 900px) {
+  .sell__steps {
+    grid-template-columns: 1fr 1fr;
+  }
+  
+  .sell__steps::before {
+    display: none;
+  }
+}
+
+@media (max-width: 600px) {
+  .sell__steps {
+    grid-template-columns: 1fr;
+  }
+  
+  .sell__hero-stats {
+    flex-direction: column;
+    gap: var(--space-lg);
+  }
+}
